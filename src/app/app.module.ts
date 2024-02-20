@@ -27,6 +27,8 @@ import { RadioComponent } from './radio/radio.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SlidetoggleComponent } from './slidetoggle/slidetoggle.component';
 import { SliderComponent } from './slider/slider.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { SliderComponent } from './slider/slider.component';
     RadioComponent,
     SidenavComponent,
     SlidetoggleComponent,
-    SliderComponent
+    SliderComponent,
+    StepperComponent,
+    TableComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
