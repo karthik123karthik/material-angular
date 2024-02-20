@@ -1,0 +1,16 @@
+<h2>Basic chips</h2>
+<mat-chip-listbox aria-label="Fish selection">
+    <mat-chip-option>One fish</mat-chip-option>
+    <mat-chip-option>Two fish</mat-chip-option>
+    <mat-chip-option color="warn">Warn fish</mat-chip-option>
+</mat-chip-listbox>
+
+<h2>Removable chips</h2>
+<mat-chip-grid #chipGrid aria-label="Fruit selection">
+    <mat-chip-row *ngFor="let fruit of fruits" (removed)="remove(fruit)">
+      {{fruit}}
+      <button matChipRemove [attr.aria-label]="'remove ' + fruit">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </mat-chip-row>
+  </mat-chip-grid>

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToggleBtnComponent } from './toggle-btn.component';
+import { SidenavComponent } from './sidenav.component';
 
-describe('ToggleBtnComponent', () => {
-  let component: ToggleBtnComponent;
-  let fixture: ComponentFixture<ToggleBtnComponent>;
+describe('SidenavComponent', () => {
+  let component: SidenavComponent;
+  let fixture: ComponentFixture<SidenavComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ToggleBtnComponent]
+      imports: [SidenavComponent]
     });
-    fixture = TestBed.createComponent(ToggleBtnComponent);
+    fixture = TestBed.createComponent(SidenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
