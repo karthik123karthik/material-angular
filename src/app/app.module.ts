@@ -29,6 +29,9 @@ import { SlidetoggleComponent } from './slidetoggle/slidetoggle.component';
 import { SliderComponent } from './slider/slider.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { TableComponent } from './table/table.component';
+import { TabComponent } from './tab/tab.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ import { TableComponent } from './table/table.component';
     SlidetoggleComponent,
     SliderComponent,
     StepperComponent,
-    TableComponent
+    TableComponent,
+    TabComponent,
+    ToolbarComponent,
+    TooltipComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
