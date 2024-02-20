@@ -34,6 +34,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { TreeComponent } from './tree/tree.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { BottomsheetComponent } from './bottomsheet/bottomsheet.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     ToolbarComponent,
     TooltipComponent,
     TreeComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    BottomsheetComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
