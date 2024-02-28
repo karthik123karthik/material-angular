@@ -8,7 +8,7 @@
     <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
       <form [formGroup]="firstFormGroup">
         <ng-template matStepLabel>Fill out your name</ng-template>
-        <mat-form-field>
+        <mat-form-field appearance="outline">
           <mat-label>Name</mat-label>
           <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
         </mat-form-field>
