@@ -7,10 +7,7 @@
 </mat-form-field>
 
 
-<input style="margin-left: 10px;" matInput [matDatepicker]="picker2">
-<mat-hint>MM/DD/YYYY</mat-hint>
-<mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
-<mat-datepicker #picker2></mat-datepicker>
+
 
 <h2>Basic date range picker</h2>
 
@@ -20,7 +17,7 @@
       <input matStartDate placeholder="Start date">
       <input matEndDate placeholder="End date">
     </mat-date-range-input>
-    <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+    <mat-hint>MM/DD/YYYY-MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matIconSuffix [for]="picker3"></mat-datepicker-toggle>
     <mat-date-range-picker #picker3></mat-date-range-picker>
   </mat-form-field>

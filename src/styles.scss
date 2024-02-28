@@ -1,8 +1,11 @@
 //importing core mixin
 @use '@angular/material' as mat;
 
+
+
 //using mixin
 @include mat.core();
+
 
 //define primary accent and warn themes
 $app-primary: mat.define-palette(mat.$amber-palette);
@@ -16,8 +19,19 @@ $app-theme: mat.define-light-theme((
     primary: $app-primary,
     accent: $app-accent,
     warn: $app-warn,
-  )
+  ),
+  density:-3
 ));
+
+
+
+
+// show label for more dense inputs as well
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined)
+  .mat-mdc-floating-label {
+  display: inline !important;
+}
+
 
 //including themes inside angular
 @include mat.all-component-themes($app-theme);
